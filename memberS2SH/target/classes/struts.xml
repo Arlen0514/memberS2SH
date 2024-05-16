@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+    <package name="basicstruts2" extends="struts-default">
+        <action name="AddMemberController" class="controller.AddMemberController">
+            <result name="addSuccess" type="redirect">addSuccess.jsp</result>
+        </action>
+        
+        <action name="UpdateMemberController" class="controller.UpdateMemberController">
+            <result name="updateSuccess" type="redirect">updateSuccess.jsp</result>
+        </action>
+        
+        <action name="DeleteMemberController" class="controller.DeleteMemberController">
+            <result name="deleteSuccess" type="redirect">deleteSuccess.jsp</result>
+        </action>
+    </package>
+
+</struts>
